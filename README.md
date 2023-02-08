@@ -1,4 +1,5 @@
 # LoadBalancer
+![תמונה](https://user-images.githubusercontent.com/65807063/217588044-5b1a410c-11aa-4f33-9931-e59b615e4206.png)
 
 ## About
 in this project, we explore basic socket communication in C.
