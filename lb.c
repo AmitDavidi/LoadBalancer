@@ -80,8 +80,8 @@ void loadBalance(int lb_client_socket, int lb_server_socket)
             exit(1);
         }
 
-        recieveAndForward(client_connection, server_connection, 1);  // read untill 1 \r\n\r\n in the request
-        recieveAndForward(server_connection, client_connection, 2);  // read untill 2 \r\n\r\n in the response
+        recieveAndForward(client_connection, server_connection, 1);  // read untill 1 \r\n\r\n in the request -- note- 1 Should be replaced with a Define - "NUM_DELIMS_IN_REQUEST"
+        recieveAndForward(server_connection, client_connection, 2);  // read untill 2 \r\n\r\n in the response -- note- 2 Should be replaced with a Define - "NUM_DELIMS_IN_RESPONSE"
 
         close(client_connection);
         close(server_connection);
