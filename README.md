@@ -45,9 +45,9 @@ Each server will return how many times it got the `counter` request.
 - or from the same terminal:
 
     ```
-    ./server `cat server_port`
+    ./server `cat server_port` &
     disown
-    ./server `cat server_port`
+    ./server `cat server_port` &
     disown
     ```
     which will result in 2 backend servers, Just make sure to kill the processes once you're done! 
